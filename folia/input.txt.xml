@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="folia.xsl"?>
+<FoLiA xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ilk.uvt.nl/folia" xml:id="input.txt" generator="libfolia-v2.11" version="2.5.1">
+  <metadata type="native">
+    <annotations>
+      <token-annotation alias="tokconfig-nld" set="https://raw.githubusercontent.com/LanguageMachines/uctodata/master/setdefinitions/tokconfig-nld.foliaset.ttl">
+        <annotator processor="ucto.1"/>
+      </token-annotation>
+      <paragraph-annotation>
+        <annotator processor="ucto.1"/>
+      </paragraph-annotation>
+      <sentence-annotation>
+        <annotator processor="ucto.1"/>
+      </sentence-annotation>
+      <quote-annotation>
+        <annotator processor="ucto.1"/>
+      </quote-annotation>
+      <pos-annotation set="http://ilk.uvt.nl/folia/sets/frog-mbpos-cgn">
+        <annotator processor="tagger.1"/>
+      </pos-annotation>
+      <lemma-annotation set="http://ilk.uvt.nl/folia/sets/frog-mblem-nl">
+        <annotator processor="mblem.1"/>
+      </lemma-annotation>
+      <morphological-annotation set="http://ilk.uvt.nl/folia/sets/frog-mbma-nl">
+        <annotator processor="mbma.1"/>
+      </morphological-annotation>
+      <chunking-annotation set="http://ilk.uvt.nl/folia/sets/frog-chunker-nl">
+        <annotator processor="IOB.1"/>
+      </chunking-annotation>
+      <entity-annotation set="http://ilk.uvt.nl/folia/sets/frog-ner-nl">
+        <annotator processor="NER.1"/>
+      </entity-annotation>
+      <entity-annotation set="http://ilk.uvt.nl/folia/sets/frog-mwu-nl">
+        <annotator processor="mwu.1"/>
+      </entity-annotation>
+      <dependency-annotation set="http://ilk.uvt.nl/folia/sets/frog-depparse-nl">
+        <annotator processor="dep-parser.1"/>
+      </dependency-annotation>
+      <text-annotation set="https://raw.githubusercontent.com/proycon/folia/master/setdefinitions/text.foliaset.ttl"/>
+    </annotations>
+    <provenance>
+      <processor xml:id="frog.1" begindatetime="2022-08-19T13:45:49" command="frog --testdir=input --xmldir=output" folia_version="2.5.1" host="afe1361076b1" name="frog" version="0.25">
+        <processor xml:id="frog.1.generator" folia_version="2.5.1" name="libfolia" type="generator" version="2.11"/>
+        <processor xml:id="ucto.1" begindatetime="2022-08-19T13:45:49" name="ucto" version="0.25">
+          <processor xml:id="uctodata.1" name="uctodata" type="datasource" version="0.9.1">
+            <processor xml:id="uctodata.1.1" name="tokconfig-nld" type="datasource" version="0.2"/>
+          </processor>
+        </processor>
+        <processor xml:id="tagger.1" begindatetime="2022-08-19T13:45:49" name="tagger" version="2.0"/>
+        <processor xml:id="mblem.1" begindatetime="2022-08-19T13:45:49" name="mblem" version="1.2"/>
+        <processor xml:id="mbma.1" begindatetime="2022-08-19T13:45:49" name="mbma" version="1.0"/>
+        <processor xml:id="IOB.1" begindatetime="2022-08-19T13:45:49" name="IOB" version="2.0"/>
+        <processor xml:id="NER.1" begindatetime="2022-08-19T13:45:49" name="NER" version="2.2"/>
+        <processor xml:id="mwu.1" begindatetime="2022-08-19T13:45:49" name="mwu" version="1.0"/>
+        <processor xml:id="dep-parser.1" begindatetime="2022-08-19T13:45:49" name="dep-parser" version="1.0"/>
+      </processor>
+    </provenance>
+    <meta id="language">nld</meta>
+  </metadata>
+  <text xml:id="input.txt.text">
+    <p xml:id="input.txt.p.1">
+      <s xml:id="input.txt.p.1.s.1">
+        <w xml:id="input.txt.p.1.s.1.w.1" class="WORD">
+          <t>Dit</t>
+          <pos class="VNW(aanw,pron,stan,vol,3o,ev)" confidence="0.777085" head="VNW">
+            <feat class="aanw" subset="vwtype"/>
+            <feat class="pron" subset="pdtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="vol" subset="status"/>
+            <feat class="3o" subset="persoon"/>
+            <feat class="ev" subset="getal"/>
+          </pos>
+          <lemma class="dit"/>
+          <morphology>
+            <morpheme>
+              <t>dit</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.1.w.2" class="WORD">
+          <t>is</t>
+          <pos class="WW(pv,tgw,ev)" confidence="0.999891" head="WW">
+            <feat class="pv" subset="wvorm"/>
+            <feat class="tgw" subset="pvtijd"/>
+            <feat class="ev" subset="pvagr"/>
+          </pos>
+          <lemma class="zijn"/>
+          <morphology>
+            <morpheme>
+              <t>zijn</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.1.w.3" class="WORD">
+          <t>een</t>
+          <pos class="LID(onbep,stan,agr)" confidence="0.99956" head="LID">
+            <feat class="onbep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="agr" subset="npagr"/>
+          </pos>
+          <lemma class="een"/>
+          <morphology>
+            <morpheme>
+              <t>een</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.1.w.4" class="WORD" space="no">
+          <t>tekst</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.998077" head="N">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="tekst"/>
+          <morphology>
+            <morpheme>
+              <t>tekst</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.1.w.5" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1.0" head="LET"/>
+          <lemma class="."/>
+          <morphology>
+            <morpheme>
+              <t>.</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <chunking xml:id="input.txt.p.1.s.1.chunking.1">
+          <chunk xml:id="input.txt.p.1.s.1.chunking.1.chunk.1" class="NP" confidence="1.0">
+            <wref id="input.txt.p.1.s.1.w.1" t="Dit"/>
+          </chunk>
+          <chunk xml:id="input.txt.p.1.s.1.chunking.1.chunk.2" class="VP" confidence="1.0">
+            <wref id="input.txt.p.1.s.1.w.2" t="is"/>
+          </chunk>
+          <chunk xml:id="input.txt.p.1.s.1.chunking.1.chunk.3" class="NP" confidence="1.0">
+            <wref id="input.txt.p.1.s.1.w.3" t="een"/>
+            <wref id="input.txt.p.1.s.1.w.4" t="tekst"/>
+          </chunk>
+        </chunking>
+        <dependencies xml:id="input.txt.p.1.s.1.dependencies.1">
+          <dependency xml:id="input.txt.p.1.s.1.dependencies.1.dependency.1" class="su">
+            <hd>
+              <wref id="input.txt.p.1.s.1.w.2" t="is"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.1.w.1" t="Dit"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="input.txt.p.1.s.1.dependencies.1.dependency.2" class="det">
+            <hd>
+              <wref id="input.txt.p.1.s.1.w.4" t="tekst"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.1.w.3" t="een"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="input.txt.p.1.s.1.dependencies.1.dependency.3" class="predc">
+            <hd>
+              <wref id="input.txt.p.1.s.1.w.2" t="is"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.1.w.4" t="tekst"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="input.txt.p.1.s.1.dependencies.1.dependency.4" class="punct">
+            <hd>
+              <wref id="input.txt.p.1.s.1.w.4" t="tekst"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.1.w.5" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+      <s xml:id="input.txt.p.1.s.2">
+        <w xml:id="input.txt.p.1.s.2.w.1" class="WORD">
+          <t>Een</t>
+          <pos class="LID(onbep,stan,agr)" confidence="0.981771" head="LID">
+            <feat class="onbep" subset="lwtype"/>
+            <feat class="stan" subset="naamval"/>
+            <feat class="agr" subset="npagr"/>
+          </pos>
+          <lemma class="een"/>
+          <morphology>
+            <morpheme>
+              <t>een</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.2.w.2" class="WORD">
+          <t>mooie</t>
+          <pos class="ADJ(prenom,basis,met-e,stan)" confidence="0.990169" head="ADJ">
+            <feat class="prenom" subset="positie"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="met-e" subset="buiging"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="mooi"/>
+          <morphology>
+            <morpheme>
+              <t>mooi</t>
+            </morpheme>
+            <morpheme>
+              <t>e</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.2.w.3" class="WORD" space="no">
+          <t>test</t>
+          <pos class="N(soort,ev,basis,zijd,stan)" confidence="0.996466" head="N">
+            <feat class="soort" subset="ntype"/>
+            <feat class="ev" subset="getal"/>
+            <feat class="basis" subset="graad"/>
+            <feat class="zijd" subset="genus"/>
+            <feat class="stan" subset="naamval"/>
+          </pos>
+          <lemma class="test"/>
+          <morphology>
+            <morpheme>
+              <t>test</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <w xml:id="input.txt.p.1.s.2.w.4" class="PUNCTUATION">
+          <t>.</t>
+          <pos class="LET()" confidence="1.0" head="LET"/>
+          <lemma class="."/>
+          <morphology>
+            <morpheme>
+              <t>.</t>
+            </morpheme>
+          </morphology>
+        </w>
+        <chunking xml:id="input.txt.p.1.s.2.chunking.1">
+          <chunk xml:id="input.txt.p.1.s.2.chunking.1.chunk.1" class="NP" confidence="1.0">
+            <wref id="input.txt.p.1.s.2.w.1" t="Een"/>
+            <wref id="input.txt.p.1.s.2.w.2" t="mooie"/>
+            <wref id="input.txt.p.1.s.2.w.3" t="test"/>
+          </chunk>
+        </chunking>
+        <dependencies xml:id="input.txt.p.1.s.2.dependencies.1">
+          <dependency xml:id="input.txt.p.1.s.2.dependencies.1.dependency.1" class="det">
+            <hd>
+              <wref id="input.txt.p.1.s.2.w.3" t="test"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.2.w.1" t="Een"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="input.txt.p.1.s.2.dependencies.1.dependency.2" class="mod">
+            <hd>
+              <wref id="input.txt.p.1.s.2.w.3" t="test"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.2.w.2" t="mooie"/>
+            </dep>
+          </dependency>
+          <dependency xml:id="input.txt.p.1.s.2.dependencies.1.dependency.3" class="punct">
+            <hd>
+              <wref id="input.txt.p.1.s.2.w.3" t="test"/>
+            </hd>
+            <dep>
+              <wref id="input.txt.p.1.s.2.w.4" t="."/>
+            </dep>
+          </dependency>
+        </dependencies>
+      </s>
+    </p>
+  </text>
+</FoLiA>
