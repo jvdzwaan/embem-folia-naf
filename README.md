@@ -1,6 +1,6 @@
 # Embem Folia Naf
 
-Using the [embodied emotions scripts](https://github.com/NLeSC/embodied-emotions-scripts) 
+Using the [embodied emotions scripts](https://github.com/jvdzwaan/embodied-emotions-scripts) 
 to create naf files for some new DBNL texts. 
 
 * Input: DBNL TEI
